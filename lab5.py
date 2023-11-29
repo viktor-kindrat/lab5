@@ -18,6 +18,9 @@ class Smartphone:
 
     def __del__(self):
         print("Smartphone object destroyed")
+        
+    def __str__(self):
+        return f"Smartphone object ({self.model})"
 
 
     def __repr__(self):
