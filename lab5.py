@@ -15,11 +15,18 @@ class Smartphone:
         self.memory = kwargs.get("memory")
         self.battery_capacity = kwargs.get("battery_capacity")
 
+
     def __del__(self):
         print("Smartphone object destroyed")
 
+
     def __repr__(self):
-        return "Smartphone object"
+        return f"Smartphone({self.model}, " \
+            f"price={self.price}, " \
+            f"phone_numbers={self.phone_numbers}, " \
+            f"memory={self.memory}, " \
+            f"battery_capacity={self.battery_capacity})"
+
 
     def get_info(self):
         """
