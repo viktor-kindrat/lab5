@@ -109,7 +109,7 @@ if __name__ == "__main__":
         ),
     ])
 
-    for el in store.sort_by_price():
+    for phone in store.sort_by_price():
         print(el.price)
 
     print(store.choose_best_phone().model)
